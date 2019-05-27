@@ -1,10 +1,15 @@
 package com.harithasnair.jumble;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.provider.CalendarContract;
+import android.support.annotation.ColorInt;
 import android.support.v7.app.AppCompatActivity;
+import android.text.style.BackgroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +19,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import javax.xml.datatype.Duration;
+
+import static android.graphics.Color.parseColor;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -239,6 +246,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
 
+
     /*validate Method Body*/
     private void validate1() {
 
@@ -246,7 +254,11 @@ public class Main2Activity extends AppCompatActivity {
         if ((answers.get(0).toLowerCase()).equals(w1.toLowerCase())) {
 
             Toast.makeText(this, "Congratulations! You found the First Word " + " " + answers.get(0), Toast.LENGTH_SHORT).show();
+
             m1.setVisibility(View.VISIBLE);
+         // editOne.setBackgroundResource(R.drawable.correct_word1);
+            //editOne.setSelection(0,editOne.length());
+
         }
         else {
             Toast.makeText(this, "Oops try again!", Toast.LENGTH_SHORT).show();

@@ -45,9 +45,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="353dp"
         android:layout_marginEnd="85dp"
+        android:backgroundTint="#FFFF00"
         android:background="@drawable/rectangle_corners"
         android:textAlignment="center"
-        android:textColor="#E4F1ECEE"
+        android:textColor="#000"
         android:textSize="15dp"
         android:textStyle="bold" />
 
@@ -63,9 +64,10 @@
         android:layout_marginTop="110dp"
         android:layout_marginEnd="87dp"
         android:background="@drawable/rectangle_corners"
+        android:backgroundTint="#FFFF00"
         android:gravity="center"
         android:textAlignment="center"
-        android:textColor="#E4F1ECEE"
+        android:textColor="#000"
         android:textSize="15dp"
         android:textStyle="bold"
         tools:visibility="visible" />
@@ -80,9 +82,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="271dp"
         android:layout_marginEnd="86dp"
+        android:backgroundTint="#FFFF00"
         android:background="@drawable/rectangle_corners"
         android:textAlignment="center"
-        android:textColor="#E4F1ECEE"
+        android:textColor="#000"
         android:textSize="15dp"
         android:textStyle="bold" />
 
@@ -99,12 +102,14 @@
         android:background="@drawable/rectangle_corners"
         android:cursorVisible="false"
         android:textAlignment="center"
-        android:textColor="#E4F1ECEE"
+        android:backgroundTint="#FFFF00"
+        android:textColor="#000"
         android:textSize="15dp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/et_01"
+        style="@android:style/Widget.EditText"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_01"
@@ -114,14 +119,16 @@
         android:layout_marginTop="153dp"
         android:layout_marginEnd="86dp"
         android:background="@drawable/rectangle_corners"
+        android:backgroundTint="#FFF"
         android:cursorVisible="false"
         android:hint="Type your word here"
         android:textAlignment="center"
-        android:textSize="15dp"
-        android:textStyle="normal" />
+        android:textColor="#000"
+        android:textSize="15dp" />
 
     <EditText
         android:id="@+id/et_03"
+        style="@android:style/Widget.EditText"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_03"
@@ -131,9 +138,11 @@
         android:layout_marginTop="311dp"
         android:layout_marginEnd="86dp"
         android:background="@drawable/rectangle_corners"
+        android:backgroundTint="#fff"
         android:cursorVisible="false"
         android:hint="Type your word here"
         android:textAlignment="center"
+        android:textColor="#000"
         android:textSize="15dp" />
 
     <EditText
@@ -148,12 +157,15 @@
         android:layout_marginEnd="85dp"
         android:background="@drawable/rectangle_corners"
         android:cursorVisible="false"
+        android:backgroundTint="#fff"
+        android:textColor="#000"
         android:hint="Type your word here"
         android:textAlignment="center"
         android:textSize="15dp" />
 
     <EditText
         android:id="@+id/et_02"
+        style="@android:style/Widget.EditText"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_01"
@@ -163,9 +175,11 @@
         android:layout_marginTop="234dp"
         android:layout_marginEnd="86dp"
         android:background="@drawable/rectangle_corners"
+        android:backgroundTint="#fff"
         android:cursorVisible="false"
         android:hint="Type your word here"
         android:textAlignment="center"
+        android:textColor="#000"
         android:textSize="15dp" />
 
     <Button

@@ -10,9 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import static android.os.Build.ID;
-import static com.harithasnair.anagram_sqlite.DatabaseHelperClass.COL_2;
-
 public class MainActivity extends AppCompatActivity {
 
     private TextView anagram;
@@ -27,12 +24,12 @@ public class MainActivity extends AppCompatActivity {
 
         anagram = (TextView) (findViewById(R.id.tv_01));
         nextButton = (Button) findViewById(R.id.play_button);
-
-        mydb = new DatabaseHelperClass(this);
+//
+//        mydb = new DatabaseHelperClass(this);
 
         // insert data
 //        SQLiteDatabase database = mydb.getWritableDatabase();
-        String projection[] = {"ToBeSolvedWords"};
+//        String projection[] = {"ToBeSolvedWords"};
 //        Cursor c = database.query("wordsTable",projection,null,null,null,null,null);
 //
 //        ContentValues values = new ContentValues();
@@ -63,30 +60,30 @@ public class MainActivity extends AppCompatActivity {
 //          System.out.println("row number :" +row);
 
 
-        SQLiteDatabase database = mydb.getReadableDatabase();
+//        SQLiteDatabase database = mydb.getReadableDatabase();
 
 
-        Cursor c = database.query("wordsTable", projection, null, null, null, null, null);
+//        Cursor c = database.query("wordsTable", projection, null, null, null, null, null);
 
 //         System.out.println("word is :" +c.getString(1));
 //
 
-        ArrayList<String> data = new ArrayList<>();
-        if (c.moveToFirst()) {
-            data.add(c.getString(c.getColumnIndex(COL_2)));
-            while (c.moveToNext()) {
-                data.add(c.getString(c.getColumnIndex(COL_2)));
-            }
-        }
-
-        System.out.println("list of words is :" + data);
-        anagram.setText(data.get(0));
-
-         System.out.println("list of words is :" + anagram);
-
-
-////        c.close();
-////      database.close();
+//        ArrayList<String> data = new ArrayList<>();
+//        if (c.moveToFirst()) {
+//            data.add(c.getString(c.getColumnIndex(COL_2)));
+//            while (c.moveToNext()) {
+//                data.add(c.getString(c.getColumnIndex(COL_2)));
+//            }
+//        }
+//
+//        System.out.println("list of words is :" + data);
+//        anagram.setText(data.get(0));
+//
+//         System.out.println("list of words is :" + anagram);
+//
+//
+//////        c.close();
+//////      database.close();
     }
 }
 

@@ -1,5 +1,8 @@
 package com.harithasnair.anagramgame;
 
+import android.database.sqlite.SQLiteOpenHelper;
+
+import java.io.IOException;
 import java.util.Random;
 
 
@@ -8,6 +11,10 @@ public class Anagram {
     public static final Random RANDOM = new Random();
     public static final String[] WORDS  = {"CAMERA", "BRISK", "POTENT", "CHEESY", "NINTH", "BLEND", "AVOID", "GASSY", "KHAKI",
                                           "BANANA","STOMP","CHILD","DENOTE","TALLER","FANCY","TUGGED","EMBARK","REMOVE","BLOOM"};
+
+
+
+
 
     public static String randomWord(){
         return WORDS[RANDOM.nextInt(WORDS.length)];
